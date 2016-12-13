@@ -1,0 +1,27 @@
+/*
+ * ReferenceException.h
+ *
+ *  Created on: 2016-04-15
+ *      Author: etudiant
+ */
+
+#ifndef REFERENCEEXCEPTION_H_
+#define REFERENCEEXCEPTION_H_
+
+class ReferenceException : std::runtime_error{
+public:
+	ReferenceException();
+	virtual ~ReferenceException();
+};
+
+class ReferenceDejaPresenteException : ReferenceException{
+public:
+	ReferenceDejaPresenteException();
+	virtual ~ReferenceDejaPresenteException();
+};
+
+class ReferenceAbsenteException : ReferenceException{
+public:
+	ReferenceAbsenteException(const std::string& p_raison);
+};
+#endif /* REFERENCEEXCEPTION_H_ */

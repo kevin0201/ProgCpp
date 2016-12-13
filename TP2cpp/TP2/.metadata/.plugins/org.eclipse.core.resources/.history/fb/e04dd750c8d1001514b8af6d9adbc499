@@ -1,0 +1,18 @@
+/*
+ * Ouvrage.cpp
+ *
+ *  Created on: 2016-02-12
+ *      Author: etudiant
+ */
+
+#include "Ouvrage.h"
+
+Ouvrage::Ouvrage() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Ouvrage::~Ouvrage() {
+	// TODO Auto-generated destructor stub
+}
+

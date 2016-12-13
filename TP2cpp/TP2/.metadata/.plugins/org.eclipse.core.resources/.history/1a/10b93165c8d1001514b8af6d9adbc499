@@ -1,0 +1,42 @@
+/*
+ * Ouvrage.cpp
+ *
+ *  Created on: 2016-02-12
+ *      Author: etudiant
+ */
+
+#include "Ouvrage.h"
+
+
+Ouvrage::Ouvrage() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Ouvrage::~Ouvrage() {
+	// TODO Auto-generated destructor stub
+}
+
+int Ouvrage::reqAnnee() const {
+	return m_annee;
+}
+
+const std::string& Ouvrage::reqAuteurs() const {
+	return m_auteurs;
+}
+
+const std::string& Ouvrage::reqEditeur() const {
+	return m_editeur;
+}
+
+const std::string& Ouvrage::reqIdentifiant() const {
+	return m_identifiant;
+}
+
+const std::string& Ouvrage::reqTitre() const {
+	return m_titre;
+}
+
+const std::string& Ouvrage::reqVille() const {
+	return m_ville;
+}

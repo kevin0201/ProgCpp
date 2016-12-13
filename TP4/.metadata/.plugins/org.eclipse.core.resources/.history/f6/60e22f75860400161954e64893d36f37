@@ -1,0 +1,25 @@
+/*
+ * BibliographieTesteur.cpp#include<gtest/gtest.h>
+ *
+ *  Created on: 2016-04-01
+ *      Author: etudiant
+ */
+
+#include <gtest/gtest.h>
+#include <string>
+#include "Bibliographie.h"
+#include "Ouvrage.h"
+#include "Journal.h"
+#include "Reference.h"
+
+class f_BibliographieobjetVide : public ::testing::Test
+{
+public:
+	Bibliographie f_Bibliographieobjet;
+};
+
+TEST_F(f_BibliographieobjetVide,test)
+{
+	Ouvrage unOuvrage("auteurReference","titre_reference","2-1234-5680-2",2000,"villeOuvrage","editeurOuvrage");
+	f_Bibliographieobjet.ajouterReference(unOuvrage);
+}

@@ -1,0 +1,20 @@
+16:30:13 **** Incremental Build of configuration Debug for project TP2cpp ****
+make all 
+Building file: ../src/gestionReferences.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gestionReferences.d" -MT"src/gestionReferences.d" -o "src/gestionReferences.o" "../src/gestionReferences.cpp"
+Finished building: ../src/gestionReferences.cpp
+ 
+Building file: ../src/validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validationFormat.d" -MT"src/validationFormat.d" -o "src/validationFormat.o" "../src/validationFormat.cpp"
+Finished building: ../src/validationFormat.cpp
+ 
+Building target: TP2cpp
+Invoking: GCC C++ Linker
+g++  -o "TP2cpp"  ./src/Ouvrage.o ./src/gestionReferences.o ./src/validationFormat.o   
+Finished building target: TP2cpp
+ 
+
+16:30:14 Build Finished (took 1s.8ms)
+

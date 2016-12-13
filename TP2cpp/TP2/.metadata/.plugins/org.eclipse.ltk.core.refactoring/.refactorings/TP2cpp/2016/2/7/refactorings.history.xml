@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TP2cpp/src/TP2cpp.cpp&apos; to &apos;gestionReferences.cpp&apos;" description="Rename resource &apos;TP2cpp.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/TP2cpp.cpp" name="gestionReferences.cpp" stamp="1455317392312" updateReferences="true"/>
+</session>

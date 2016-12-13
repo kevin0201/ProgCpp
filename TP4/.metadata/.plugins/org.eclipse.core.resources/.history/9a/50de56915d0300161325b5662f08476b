@@ -1,0 +1,18 @@
+/*
+ * ReferenceException.cpp
+ *
+ *  Created on: 2016-04-15
+ *      Author: etudiant
+ */
+
+#include "ReferenceException.h"
+
+ReferenceException::ReferenceException() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ReferenceException::~ReferenceException() {
+	// TODO Auto-generated destructor stub
+}
+

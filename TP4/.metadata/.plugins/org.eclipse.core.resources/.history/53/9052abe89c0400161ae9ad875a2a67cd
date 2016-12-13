@@ -1,0 +1,17 @@
+TEMPLATE = app
+TARGET = BibliographieQt
+QT += core \
+    gui
+HEADERS += ajoutjournal.h \
+    sousmenureference.h \
+    bibliographieqt.h
+SOURCES += ajoutjournal.cpp \
+    sousmenureference.cpp \
+    main.cpp \
+    bibliographieqt.cpp
+FORMS += ajoutjournal.ui \
+    sousmenureference.ui \
+    bibliographieqt.ui
+RESOURCES += 
+LIBS += "../source/Debug/libsource.a"
+INCLUDEPATH += "../source/."

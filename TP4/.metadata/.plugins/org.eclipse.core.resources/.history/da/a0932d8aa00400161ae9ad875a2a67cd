@@ -1,0 +1,26 @@
+TEMPLATE = app
+TARGET = BibliographieQt
+QT += core \
+    gui
+HEADERS += dialogsuppression.h \
+    dialogajouterreference.h \
+    supprimerreference.h \
+    ajoutouvrage.h \
+    ajoutjournal.h \
+    bibliographieqt.h
+SOURCES += dialogsuppression.cpp \
+    dialogajouterreference.cpp \
+    supprimerreference.cpp \
+    ajoutouvrage.cpp \
+    ajoutjournal.cpp \
+    main.cpp \
+    bibliographieqt.cpp
+FORMS += dialogsuppression.ui \
+    dialogajouterreference.ui \
+    supprimerreference.ui \
+    ajoutouvrage.ui \
+    ajoutjournal.ui \
+    bibliographieqt.ui
+RESOURCES += 
+LIBS += "../source/Debug/libsource.a"
+INCLUDEPATH += "../source/."

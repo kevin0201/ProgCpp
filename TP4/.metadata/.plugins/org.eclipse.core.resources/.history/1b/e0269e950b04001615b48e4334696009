@@ -1,0 +1,67 @@
+/*
+ * BibliographieTesteur.cpp#include<gtest/gtest.h>
+
+ *
+ *  Created on: 2016-04-01
+ *      Author: etudiant
+ */
+
+#include <gtest/gtest.h>
+#include <string>
+#include "Bibliographie.h"
+#include "Ouvrage.h"
+#include "Journal.h"
+#include "Reference.h"
+
+
+/**
+ * \brief Test de la méthode reqBibliographieFormate() et ajouterReference ()
+ * 2 cas valides : <br>
+ * BibliographieEstVide : Construction, la Bibliographie est vide;
+ * BibliographieEstNonVide et BibliographieEstNonVide2 : Construction, ajout de 1 élément, la Bibliographie n'est pas vide
+ * <br>
+ * cas invalide : <br>
+ * Aucun d'identifié
+ */
+TEST(BibliographieTestjournal,BAjoutJournal)
+{
+	Bibliographie f_BibliographieTest;
+	Journal unJournal("auteurReference","titre_reference","0395-2037",2000,"nom_journal",100,100,100);
+	ASSERT_THROW(f_BibliographieTest.ajouterReference(unJournal),ReferenceDejaPresenteException)<< "Reference deja presente";
+	std::string form;
+	form=f_BibliographieTest.reqBibliographieFormate();
+	ASSERT_EQ(form,f_BibliographieTest.reqBibliographieFormate());
+}
+
+TEST(BibliographieTestOuvrage,AjoutOuvrage)
+{
+	Bibliographie f_BibliographieTest;
+	Ouvrage unOuvrage("auteurReference","titre_reference","2-1234-5680-2",2000,"villeOuvrage","editeurOuvrage");
+	ASSERT_THROW(f_BibliographieTest.ajouterReference(unOuvrage),ReferenceDejaPresenteException)<< "Reference deja presente";
+	std::string form;
+	form=f_BibliographieTest.reqBibliographieFormate();
+	//ASSERT_EQ(form,f_BibliographieTest.reqBibliographieFormate());
+
+}
+
+TEST(BibliographieExceptionSupprimer,TestSuppimerReference)
+{
+	Bibliographie f_BibliographieTest;
+	Ouvrage unOuvrage("auteurReference","titre_reference","2-1234-5680-2",2000,"villeOuvrage","editeurOuvrage");
+}
+/**
+ * \brief Test de la méthode reqBibliographieFormate() et ajouterReference ()
+ * 2 cas valides : <br>
+ * BibliographieEstVide : Construction, la Bibliographie est vide;
+ * BibliographieEstNonVide et BibliographieEstNonVide2 : Construction, ajout de 1 élément, la Bibliographie n'est pas vide
+ * <br>
+ * cas invalide : <br>
+ * Aucun d'identifié
+ */
+TEST(BibliographieExceptionAjouter,ReferenceDejaPresenteException)
+{
+	Bibliographie f_BibliographieTest;
+	Ouvrage unOuvrage("auteurReference","titre_reference","2-1234-5680-2",2000,"villeOuvrage","editeurOuvrage");
+	ASSERT_THROW(f_BibliographieTest.ajouterReference(unOuvrage),ReferenceDejaPresenteException)<< "Reference deja presente";
+}
+

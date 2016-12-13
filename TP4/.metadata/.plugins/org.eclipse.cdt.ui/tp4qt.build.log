@@ -1,0 +1,15 @@
+05:24:20 **** Build of project tp4qt ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory '/home/etudiant/Documents/TP4/tp4qt'
+/usr/lib/i386-linux-gnu/qt4/bin/uic tp4qt.ui -o ui_tp4qt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/tp4qt.o tp4qt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. tp4qt.h -o debug/moc_tp4qt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_tp4qt.o debug/moc_tp4qt.cpp
+g++  -o tp4qt debug/main.o debug/tp4qt.o debug/moc_tp4qt.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'tp4qt' && test -f tp4qt.gdb-index && objcopy --add-section '.gdb_index=tp4qt.gdb-index' --set-section-flags '.gdb_index=readonly' 'tp4qt' 'tp4qt' && rm -f tp4qt.gdb-index || true
+make[1]: Leaving directory '/home/etudiant/Documents/TP4/tp4qt'
+
+05:24:26 Build Finished (took 6s.300ms)
+

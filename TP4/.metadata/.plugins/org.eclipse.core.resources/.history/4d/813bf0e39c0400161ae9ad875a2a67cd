@@ -1,0 +1,82 @@
+/********************************************************************************
+** Form generated from reading UI file 'sousmenureference.ui'
+**
+** Created by: Qt User Interface Compiler version 4.8.6
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_SOUSMENUREFERENCE_H
+#define UI_SOUSMENUREFERENCE_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QMainWindow>
+#include <QtGui/QMenuBar>
+#include <QtGui/QPushButton>
+#include <QtGui/QStatusBar>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_SousMenuReferenceClass
+{
+public:
+    QWidget *centralwidget;
+    QPushButton *AjouterJournal;
+    QPushButton *pushButton_2;
+    QLabel *label;
+    QMenuBar *menubar;
+    QStatusBar *statusbar;
+
+    void setupUi(QMainWindow *SousMenuReferenceClass)
+    {
+        if (SousMenuReferenceClass->objectName().isEmpty())
+            SousMenuReferenceClass->setObjectName(QString::fromUtf8("SousMenuReferenceClass"));
+        SousMenuReferenceClass->resize(388, 152);
+        centralwidget = new QWidget(SousMenuReferenceClass);
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        AjouterJournal = new QPushButton(centralwidget);
+        AjouterJournal->setObjectName(QString::fromUtf8("AjouterJournal"));
+        AjouterJournal->setGeometry(QRect(20, 40, 151, 41));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(200, 40, 171, 41));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(110, 5, 181, 31));
+        SousMenuReferenceClass->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(SousMenuReferenceClass);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 388, 27));
+        SousMenuReferenceClass->setMenuBar(menubar);
+        statusbar = new QStatusBar(SousMenuReferenceClass);
+        statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        SousMenuReferenceClass->setStatusBar(statusbar);
+
+        retranslateUi(SousMenuReferenceClass);
+
+        QMetaObject::connectSlotsByName(SousMenuReferenceClass);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *SousMenuReferenceClass)
+    {
+        SousMenuReferenceClass->setWindowTitle(QApplication::translate("SousMenuReferenceClass", "MainWindow", 0, QApplication::UnicodeUTF8));
+        AjouterJournal->setText(QApplication::translate("SousMenuReferenceClass", "AJOUTER JOURNAL", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("SousMenuReferenceClass", "AJOUTER OUVRAGE", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("SousMenuReferenceClass", "Ajouter Reference sous menu", 0, QApplication::UnicodeUTF8));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class SousMenuReferenceClass: public Ui_SousMenuReferenceClass {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_SOUSMENUREFERENCE_H

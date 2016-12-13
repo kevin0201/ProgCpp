@@ -1,0 +1,10 @@
+TEMPLATE = app
+TARGET = tp4qt 
+
+QT        += core gui 
+
+HEADERS   += tp4qt.h
+SOURCES   += main.cpp \
+    tp4qt.cpp
+FORMS     += tp4qt.ui    
+RESOURCES +=

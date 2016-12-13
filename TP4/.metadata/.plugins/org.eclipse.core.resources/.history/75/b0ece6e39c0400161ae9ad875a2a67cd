@@ -1,0 +1,12 @@
+#include "sousmenureference.h"
+
+SousMenuReference::SousMenuReference(QWidget *parent)
+    : QMainWindow(parent)
+{
+	ui.setupUi(this);
+}
+
+SousMenuReference::~SousMenuReference()
+{
+
+}

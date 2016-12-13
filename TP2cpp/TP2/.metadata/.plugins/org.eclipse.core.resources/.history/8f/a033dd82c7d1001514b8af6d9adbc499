@@ -1,0 +1,39 @@
+/*
+ * Ouvrage.h
+ *
+ *  Created on: 2016-02-12
+ *      Author: etudiant
+ */
+
+#ifndef OUVRAGE_H_
+#define OUVRAGE_H_
+
+#include <string>
+
+class Ouvrage {
+public:
+	Ouvrage(const std::string& p_auteurs,
+			const std::string& p_titre,
+			const std::string& p_identifiant,
+			int  p_annee,
+			const std::string& p_ville,
+			const std::string& p_editeur);
+	virtual ~Ouvrage();
+	string reqAuteurs();
+	string reqTitre();
+	string reqIdentifiant();
+	int reqAnnee();
+	string reqVille();
+	string reqEditeur();
+
+
+private:
+	string m_auteurs;
+	string m_editeur;
+	string m_ville;
+	string m_titre;
+	int m_annee;
+	string m_identifiant;
+};
+
+#endif /* OUVRAGE_H_ */
